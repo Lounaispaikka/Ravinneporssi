@@ -1,0 +1,7 @@
+<?php include_once("engine/rp.start.php");
+
+rpGetTradeOptions("<input class=\"css-checkbox\" name=\"rpClientTradeOption_".intval($_GET["id"])."_[rp(id)]\" id=\"rpClientTradeOption_".intval($_GET["id"])."_[rp(id)]\" type=\"checkbox\" CHECKED /><label class=\"css-label\" for=\"rpClientTradeOption_".intval($_GET["id"])."_[rp(id)]\">[rp(title)]</label><div class=\"clear height5\"></div>",
+"<input class=\"css-checkbox\" name=\"rpClientTradeOption_".intval($_GET["id"])."_[rp(id)]\" id=\"rpClientTradeOption_".intval($_GET["id"])."_[rp(id)]\" type=\"checkbox\" CHECKED /><label class=\"css-label\" for=\"rpClientTradeOption_".intval($_GET["id"])."_[rp(id)]\">[rp(title)]</label><input class=\"tradeText\" type=\"text\" onchange=\"$('#rpClientTradeOption_".intval($_GET["id"])."_[rp(id)]').attr('checked', true);\" name=\"rpClientTradeOptionDescription_".intval($_GET["id"])."_[rp(id)]\" id=\"rpClientTradeOptionDescription_".intval($_GET["id"])."_[rp(id)]\" value=\"[rp(value)]\" /><div class=\"clear height5\"></div>", "[rp(title)]<br /><input class=\"tradeText\" type=\"text\" name=\"rpClientTradeDescription_".intval($_GET["id"])."_[rp(id)]\" id=\"rpClientTradeDescription_".intval($_GET["id"])."_[rp(id)]\" value=\"[rp(value)]\" /><div class=\"clear height5\"></div>",
+$_GET["id"], $_GET["client_id"]);
+
+include_once("engine/rp.end.php"); ?>
