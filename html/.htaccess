@@ -1,0 +1,5 @@
+Options -Indexes
+RewriteEngine on
+RewriteRule ^map$ ?rpPage=map [L]
+RewriteRule ^logout$ ?logout=1 [L]
+RewriteRule ^remove$ ?remove=1 [L]
